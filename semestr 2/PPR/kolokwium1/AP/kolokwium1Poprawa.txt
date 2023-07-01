@@ -1,0 +1,33 @@
+zad1 Sprawdź czy liczba jest pierwsza
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+//liczba pierwsza to taka liczba, która dzieli się tylko przez 1 oraz siebie samą
+//napisz funkcję isPrime(), która sprawdza czy zadany element jest liczbą pierwszą
+
+
+int main(){
+    std::vector<int> numbers{323, 541, 709, 2857, 2861, 4201, 5531, 11903, 12347, 21379, 36557, 53777};
+    for(const int& element : numbers){
+        if(isPrime(element)){
+            std::cout<< element << " is prime\n";
+        }
+        else{
+            std::cout<< element << " is not prime\n";
+        }
+    }
+}
+
+
+zad2 Policz samogłoski
+'o', 'e', 'i', 'a', 'y', 'u' 171
+#include <iostream>
+#include <string>
+
+//napisz funkcję, która dla zadanego ciągu znaków liczy ilość wystąpień samogłosek
+int main(){
+    std::string tekst = "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+    std::cout<< "W tekście jest " << countVowels(tekst) << " samogłosek.\n";
+}

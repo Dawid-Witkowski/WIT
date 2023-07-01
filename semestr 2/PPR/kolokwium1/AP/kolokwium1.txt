@@ -1,0 +1,57 @@
+zad 1:
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+/*
+Liczba doskonała to taka liczba całkowita, która jest równa sumie jej dzielników.
+Przykładowo, dzielnikami liczby 6 są liczby {1, 2, 3}, oraz 6 = 1 + 2 + 3.
+Dzielnikami liczby 28 są liczby {1, 2, 4, 7, 14}, oraz 28 = 1 + 2 + 4 + 7 + 14
+Napisz program, który znajduje wszystkie liczby doskonałe z zadanego przedziału.
+Zaimplementuj funkcję pomocniczą, która oblicza sumę dzielników właściwych danej liczby.
+*/
+
+
+// tutaj napisz brakującą część programu
+
+int main() {
+
+	std::vector<int> perfectNumbers = findPerfectNumbers(1, 10000);
+
+	for (const auto& number : perfectNumbers) {
+		std::cout << number << " ";
+	}
+	std::cout << "\n";
+	//Poprawna odpowiedź : 6 28 496 8128 
+
+
+	return 0;
+}
+
+zad 2:
+#include <iostream>
+#include <string>
+#include <vector>
+#include <numeric>
+
+
+// znajdź wszystkie kombinacje liczb podzielnych przez 3, które można uzyskać poprzez podstawienie cyfry (0-9) na pozycji ?
+// uwaga: liczba 036 nie istnieje
+// tutaj napisz funkcję rozwiązującą zadanie
+
+
+
+int main() {
+	std::vector<std::string> inputs = { "2?3", "?36", "213?5", "?9630", "234?" };
+
+	for (const std::string& input : inputs) {
+		int combinations = countCombinationsDivisibleByThree(input);
+		std::cout << input << " => " << combinations << std::endl;
+	}
+
+	return 0;
+}
+
+
+
