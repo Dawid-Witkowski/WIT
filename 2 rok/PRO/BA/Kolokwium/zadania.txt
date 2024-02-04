@@ -1,0 +1,26 @@
+1 z 3 zadań do wyboru:
+
+1) user ma plik excela z tabelami (patrz pliki MatrixGaus albo MatrixMultiply), user zaznacza tabelę, klika CTRL+C, CTRL+V do naszego programu i wkleja dane, nasz program ma wczytać dane wklejone przez usera z excela, zamienić je na macierz o wymiarach NxM (podane przez użytkownika na początku programu) i zapytać go o operację, którą chce wykonać:
+- dodawanie
+- odejmowanie
+- mnozenie
+- inwersja
+
+jeśli user wybierze jedną z pierwszych trzech opcji to wtedy pytamy o kolejną macierz i wykonujemy tą operację na obu macierzach, wypisując wynik
+
+w przypadku wybrania ostatniej opcji wykonujemy inwersję na wprowadzonej macierzy i wypisujemy wynik
+
+przykładowe dane:
+4 // width
+2 // height
+0,0	500,2	4556,5	5555,5
+125,2	553,5	00,0	24,7
+4 // wybrana opcja
+
+// wynik program wyświetla poniżej: ...
+
+2) Najdłuższa droga między miastami:
+patrz plik DijkstaraDataGen
+znajdź najdłuższą / najdłuższe drogi (jeśli jest wiele dróg o tej samej długości) i wypisz jej długość oraz miasta przez jakie przechodzi
+
+3) Zrób grę Kalaha (https://pl.wikipedia.org/wiki/Kalaha)
