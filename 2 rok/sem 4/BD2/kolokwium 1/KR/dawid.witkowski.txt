@@ -1,0 +1,123 @@
+-- część pierwsza
+
+DROP TABLE WD_SHARE CASCADE CONSTRAINTS;
+CREATE TABLE WD_SHARE(
+    tickerSymbol VARCHAR2(20 CHAR) NOT NULL
+    , stockName VARCHAR2(100 CHAR)
+    , CONSTRAINT WD_SHARE_PK PRIMARY KEY (tickerSymbol)
+);
+
+DROP TABLE WD_CATEGORY CASCADE CONSTRAINTS;
+CREATE TABLE WD_CATEGORY(
+    categCode VARCHAR2(10 CHAR) NOT NULL
+    , categoryDescription VARCHAR2(100 CHAR)
+    , CONSTRAINT WD_CATEGORY_PK PRIMARY KEY (categCode)
+    , CONSTRAINT WD_CATEGORY_UN UNIQUE(categoryDescription)
+);
+
+DROP TABLE WD_TRANSACTION CASCADE CONSTRAINTS;
+CREATE TABLE WD_TRANSACTION(
+    transID NUMBER(6) NOT NULL
+    , dateTime DATE
+    , transType VARCHAR2(20 CHAR)
+    , SHARE_tickerSymbol VARCHAR2(20 CHAR) NOT NULL
+    , numShares NUMBER(6)
+    , unitPrice NUMBER(10,2)
+    , cust_ID NUMBER(8)
+    , custName VARCHAR2(100 CHAR)
+    , CONSTRAINT WD_TRANSACTION_PK PRIMARY KEY (transID)
+    , CONSTRAINT WD_TRANSACTION_SHARE_FK FOREIGN KEY (SHARE_tickerSymbol) REFERENCES WD_SHARE(tickerSymbol)
+);
+
+DROP TABLE WD_TRANCAT CASCADE CONSTRAINTS;
+CREATE TABLE WD_TRANCAT(
+    TRANSACTION_transID NUMBER(6) NOT NULL
+    , CATEGORY_categCode VARCHAR2(10 CHAR) NOT NULL
+    , CONSTRAINT WD_TRANCAT_PK PRIMARY KEY (TRANSACTION_transID, CATEGORY_categCode)
+    , CONSTRAINT WD_TRANCAT_TRANSACTION_FK FOREIGN KEY (TRANSACTION_transID) REFERENCES WD_TRANSACTION(transID)
+    , CONSTRAINT WD_TRANCAT_CATEGORY_FK FOREIGN KEY (CATEGORY_categCode) REFERENCES WD_CATEGORY(categCode)
+);
+
+-- część druga
+
+-- categories
+INSERT INTO WD_CATEGORY (categCode, categoryDescription) VALUES ('SMC', 'Small Cap');
+INSERT INTO WD_CATEGORY (categCode, categoryDescription) VALUES ('IT', 'Info Tech');
+INSERT INTO WD_CATEGORY (categCode, categoryDescription) VALUES ('LGC', 'Large Cap');
+INSERT INTO WD_CATEGORY (categCode, categoryDescription) VALUES ('MAN', 'Manufacturing');
+INSERT INTO WD_CATEGORY (categCode, categoryDescription) VALUES ('EUR', 'Europe');
+INSERT INTO WD_CATEGORY (categCode, categoryDescription) VALUES ('MDC', 'Mid Cap');
+INSERT INTO WD_CATEGORY (categCode, categoryDescription) VALUES ('RET', 'Retail');
+INSERT INTO WD_CATEGORY (categCode, categoryDescription) VALUES ('AS', 'Asia');
+
+-- share
+INSERT INTO WD_SHARE (tickerSymbol, stockName) VALUES ('TMAX', 'TechMax');
+INSERT INTO WD_SHARE (tickerSymbol, stockName) VALUES ('ALO', 'Alstom, SA');
+INSERT INTO WD_SHARE (tickerSymbol, stockName) VALUES ('WFMI', 'Whole Foods');
+INSERT INTO WD_SHARE (tickerSymbol, stockName) VALUES ('MSFT', 'MSFT');
+INSERT INTO WD_SHARE (tickerSymbol, stockName) VALUES ('TM', 'Toyota');
+
+-- transaction
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567823, to_date('8/23/2006 9:37', 'MM/DD/YYYY HH24:MI'), 'Sell', 'TMAX', 1000, 8.24, 789, 'MegaBrokers');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567824, to_date('8/23/2006 9:38', 'MM/DD/YYYY HH24:MI'), 'Buy', 'TMAX', 1000, 8.24, 989, 'Kirt Kerorian');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567825, to_date('8/23/2006 9:41', 'MM/DD/YYYY HH24:MI'), 'Sell', 'ALO', 2500, 12.56, 789, 'MegaBrokers');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567826, to_date('8/23/2006 9:41', 'MM/DD/YYYY HH24:MI'), 'Sell', 'WFMI', 700, 20.41, 320, 'TradePartners');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567827, to_date('8/23/2006 9:42', 'MM/DD/YYYY HH24:MI'), 'Buy', 'WFMI', 500, 20.43, 789, 'MegaBrokers');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567828, to_date('8/23/2006 9:42', 'MM/DD/YYYY HH24:MI'), 'Buy', 'WFMI', 200, 20.43, 989, 'Kirt Kerorian');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567829, to_date('8/23/2006 9:42', 'MM/DD/YYYY HH24:MI'), 'Buy', 'ALO', 2500, 12.58, 210, 'ElecTrade');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567830, to_date('8/23/2006 9:44', 'MM/DD/YYYY HH24:MI'), 'Sell', 'MSFT', 4000, 43.82, 320, 'TradePartners');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567831, to_date('8/23/2006 9:44', 'MM/DD/YYYY HH24:MI'), 'Sell', 'MSFT', 1000, 43.82, 776, 'Max Selmer');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567832, to_date('8/23/2006 9:45', 'MM/DD/YYYY HH24:MI'), 'Buy', 'MSFT', 5000, 43.84, 789, 'MegaBrokers');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567833, to_date('8/23/2006 9:45', 'MM/DD/YYYY HH24:MI'), 'Sell', 'TM', 800, 51.00, 989, 'Kirt Kerorian');
+
+INSERT INTO WD_TRANSACTION (transID, dateTime, transType, SHARE_tickerSymbol, numShares, unitPrice, cust_ID, custName) 
+VALUES (567834, to_date('8/23/2006 9:46', 'MM/DD/YYYY HH24:MI'), 'Buy', 'TM', 800, 51.02, 776, 'Max Selmer');
+
+
+-- TRANCAT
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567823, 'SMC');
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567823, 'IT');
+
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567824, 'SMC');
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567824, 'IT');
+
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567823, 'IT');
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567823, 'IT');
+
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567825, 'LGC');
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567825, 'MAN');
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567825, 'EUR');
+
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567826, 'MDC');
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567826, 'RET');
+
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567827, 'MDC');
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567827, 'RET');
+
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567827, 'RET');
+INSERT INTO WD_TRANCAT(TRANSACTION_transID, CATEGORY_categCode) VALUES (567827, 'RET');
+
+
+
+
