@@ -1,0 +1,69 @@
+ uwu
+#include <iostream>
+#include <string>
+#include <vector>
+
+
+class Widget {
+public:
+    Widget(std::string name) :
+        name(name) {
+    }
+
+    ~Widget() {
+        children.clear();
+    }
+
+    void add(Widget* widget) {
+        children.push_back(widget);
+    }
+
+    void print() {
+        std::cout << this->name << std::endl;
+        this->print(this->children,this->name);
+    }
+
+    void print(std::vector<Widget*> widget, std::string ancestorName) {
+
+        for (auto child : widget) {
+            std::cout << ancestorName << " " << child->name << " " << std::endl;
+            if (child->children.size() > 0) {
+                child->print( child->children, ancestorName + " " + child->name);
+            }
+        }
+
+    }
+
+    std::string name;
+    std::vector<Widget*> children;
+
+};
+
+class Button : public Widget {
+public:
+    Button(std::string name) :
+        Widget(name) {
+    }
+};
+
+class Edit : public Widget {
+public:
+    Edit(std::string name) :
+        Widget(name) {
+    }
+};
+
+
+int main() {
+    Button* yes = new Button("yes");
+    Button* no = new Button("no");
+    Widget* panel = new Widget("panel");
+    panel->add(yes);
+    panel->add(no);
+    Edit* edit = new Edit("edit");
+    Widget* window = new Widget("window");
+    window->add(panel);
+    window->add(edit);
+    window->print();
+    delete window;
+}

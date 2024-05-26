@@ -1,0 +1,61 @@
+#include <iostream>
+
+class Button {
+public:
+    const virtual bool on() = 0;
+    const virtual void press() = 0;
+    const virtual void release() = 0;
+};
+
+class PushButton: public Button {
+private:
+    bool isOn = false;
+
+public:
+    bool on() {
+        return isOn;
+    }
+    void press() {
+        isOn = true;
+    }
+    void release() {
+        isOn = false;
+    }
+};
+
+class SwitchButton: public Button {
+private:
+    bool isOn = false;
+
+public:
+    bool on() {
+        return isOn;
+    }
+    void press() {
+        isOn = !isOn;
+    }
+    void release() {}
+};
+
+int main() {
+
+
+
+    std::cout << std::boolalpha;
+    Button *pushButton = new PushButton;
+    std::cout << pushButton->on() << " ";
+    pushButton->press();
+    std::cout << pushButton->on() << " ";
+    pushButton->release();
+    std::cout << pushButton->on() << std::endl;
+    delete pushButton;
+    Button *switchButton = new SwitchButton;
+    std::cout << switchButton->on() << " ";
+    switchButton->press();
+    std::cout << switchButton->on() << " ";
+    switchButton->release();
+    std::cout << switchButton->on() << " ";
+    switchButton->press();
+    std::cout << switchButton->on() << std::endl;
+    delete switchButton;
+}
