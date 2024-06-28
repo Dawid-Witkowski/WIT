@@ -2,9 +2,9 @@
 
 class Button {
 public:
-    const virtual bool on() = 0;
-    const virtual void press() = 0;
-    const virtual void release() = 0;
+    virtual bool on() const = 0;
+    virtual void press() = 0;
+    virtual void release() = 0;
 };
 
 class PushButton: public Button {
@@ -12,7 +12,7 @@ private:
     bool isOn = false;
 
 public:
-    bool on() {
+    bool on() const override {
         return isOn;
     }
     void press() {
@@ -28,7 +28,7 @@ private:
     bool isOn = false;
 
 public:
-    bool on() {
+    bool on() const override {
         return isOn;
     }
     void press() {
@@ -36,26 +36,3 @@ public:
     }
     void release() {}
 };
-
-int main() {
-
-
-
-    std::cout << std::boolalpha;
-    Button *pushButton = new PushButton;
-    std::cout << pushButton->on() << " ";
-    pushButton->press();
-    std::cout << pushButton->on() << " ";
-    pushButton->release();
-    std::cout << pushButton->on() << std::endl;
-    delete pushButton;
-    Button *switchButton = new SwitchButton;
-    std::cout << switchButton->on() << " ";
-    switchButton->press();
-    std::cout << switchButton->on() << " ";
-    switchButton->release();
-    std::cout << switchButton->on() << " ";
-    switchButton->press();
-    std::cout << switchButton->on() << std::endl;
-    delete switchButton;
-}
