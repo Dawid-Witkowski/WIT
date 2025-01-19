@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="info">
+          <xs:complexType>
+            <xs:attribute name="modify_data" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="people">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="person" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="age" type="xs:integer" />
+                    <xs:element name="mail">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern
+                            value="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="telefon">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:pattern value="\+48[0-9]{9}" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="hobby" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="plec" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="male" />
+                        <xs:enumeration value="female" />
+                        <xs:enumeration value="-" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="source" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

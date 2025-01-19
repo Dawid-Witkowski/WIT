@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="prosze_o_zaliczenie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="transaction" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Zoo" type="ZooEnum" use="required"/>
+            <xs:attribute name="Gatunek" type="GatunekEnum" use="required"/>
+            <xs:attribute name="Liczba" type="LiczbaEnum" use="required"/>
+            <xs:attribute name="Waga" type="WagaType" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="ZooEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Zoo Poland"/>
+      <xs:enumeration value="Zoo Africa"/>
+      <xs:enumeration value="Zoo International"/>
+      <xs:enumeration value="Zoo Ash"/>
+      <xs:enumeration value="Zoo Britain"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="GatunekEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Antylopa"/>
+      <xs:enumeration value="Pies"/>
+      <xs:enumeration value="Lew"/>
+      <xs:enumeration value="Pingwin"/>
+      <xs:enumeration value="Słoń"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LiczbaEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="20"/>
+      <xs:enumeration value="30"/>
+      <xs:enumeration value="40"/>
+      <xs:enumeration value="50"/>
+      <xs:enumeration value="60"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="WagaType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="10000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

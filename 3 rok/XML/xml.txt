@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root abc="123" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="XSD.xsd">
+    <info modify_data="12.10.2024"/>
+    <humans>
+        <human sex="female">
+            <name>Jakub</name>
+            <surname>Tomek</surname>
+            <height>160</height>
+            <mail>witkowski.dawid@gmail.com</mail>
+            <telephone>+48575574011</telephone>
+        </human>
+        <human sex="male">
+            <name>Tomek</name> 
+            <surname>Doleśniak</surname>
+            <height>190</height>
+            <mail>witkowski.dawid@gmail.com</mail>
+            <telephone>+48575574111</telephone>
+        </human>
+        <human sex="male">
+            <name>Dawid</name>
+            <surname>Doleśniak</surname>
+            <height>150</height>
+            <mail>witkowski.dawid@gmail.com</mail>
+            <telephone>+48575574111</telephone>
+        </human>
+        <human sex="male">
+            <name>Kamil</name>
+            <surname>Doleśniak</surname>
+            <height>178</height>
+            <mail>witkowski.dawid@gmail.com</mail>
+            <telephone>+48575574111</telephone>
+        </human>
+        <human sex="male">
+            <name>Kuba</name>
+            <surname>Doleśniak</surname>
+            <height>179</height>
+            <mail>kd2.wit.pl</mail>
+            <telephone>+48575574111</telephone>
+        </human>
+    </humans>
+</root>

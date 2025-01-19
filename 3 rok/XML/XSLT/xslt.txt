@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+  <html>
+    <body>
+      <h2>Lista pracowników</h2>
+      <xsl:for-each select="root">
+        <p>Lokalizacja: <b><xsl:value-of select="@location"/></b></p>
+      </xsl:for-each>
+      <table border="1">
+        <tr bgcolor="#aabbcc">
+          <th>Tytuł</th>
+          <th>Imię</th>
+          <th>Nazwisko</th>
+          <th>Płeć</th>
+          <th>Telefon</th>
+          <th>E-mail</th>
+        </tr>
+        <xsl:for-each select="root/pracownicy/pracownik">
+          <tr>
+            <xsl:attribute name="style">
+              <xsl:choose>
+                <xsl:when test="@plec = 'K'">
+                  <xsl:text>background-color: pink;</xsl:text>
+                </xsl:when>
+                <xsl:when test="@plec = 'M'">
+                  <xsl:text>background-color: lightblue;</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:text>background-color: lightgray;</xsl:text>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:attribute>
+            <td><xsl:value-of select="tytul"/></td>
+            <td><xsl:value-of select="imie"/></td>
+            <td><xsl:value-of select="nazwisko"/></td>
+            <td><xsl:value-of select="@plec"/></td>
+            <td>
+              <xsl:choose>
+                <xsl:when test="not(string-length(telefon) = 9)">
+                  <xsl:attribute name="style">color: red;</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="style">color: black;</xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:value-of select="telefon"/>
+            </td>
+            <td>
+              <xsl:choose>
+                <xsl:when test="not(contains(email, '@') and contains(email, '.'))">
+                  <xsl:attribute name="style">color: red;</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:attribute name="style">color: black;</xsl:attribute>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:value-of select="email"/>
+            </td>
+          </tr>
+        </xsl:for-each>
+      </table>
+    </body>
+  </html>
+</xsl:template>
+
+</xsl:stylesheet>
