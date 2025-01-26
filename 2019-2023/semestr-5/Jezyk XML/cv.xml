@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE cv [
+    <!ELEMENT cv (dane_osobowe, wyksztalcenie)>
+    <!ELEMENT dane_osobowe (imie+, nazwisko, adres)>
+    <!ELEMENT imie (#PCDATA)>
+    <!ATTLIST imie typ CDATA #REQUIRED>
+    <!ELEMENT nazwisko (#PCDATA)>
+    <!ELEMENT adres (ulica, nr, miasto?)>
+    <!ELEMENT ulica (#PCDATA)>
+    <!ELEMENT nr (#PCDATA)>
+    <!ELEMENT miasto (#PCDATA)>
+    <!ELEMENT wyksztalcenie (szkola+)>
+    <!ELEMENT szkola (nazwa, adres)>
+    <!ELEMENT nazwa (#PCDATA)>
+]>
+
+<cv>
+    <dane_osobowe>
+        <imie typ="pierwsze">Jerzy</imie>
+        <imie typ="drugie">Adam</imie>
+        <nazwisko>Kowalski</nazwisko>
+        <adres>
+            <ulica>Newelska</ulica>
+            <nr>6</nr>
+            <miasto>Warszawa</miasto>
+        </adres>
+    </dane_osobowe>
+    <wyksztalcenie>
+        <szkola>
+            <nazwa>WIT</nazwa>
+            <adres>
+                <ulica>Puławska</ulica>
+                <nr>1</nr>
+            </adres>
+        </szkola>
+        <szkola>
+            <nazwa>WIT2</nazwa>
+            <adres>
+                <ulica>Puławska</ulica>
+                <nr>1</nr>
+            </adres>
+        </szkola>
+    </wyksztalcenie>
+</cv>
