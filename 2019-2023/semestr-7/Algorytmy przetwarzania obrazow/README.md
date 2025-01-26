@@ -1,0 +1,1 @@
+Aplikacja pozwala na wykonywanie szeregu operacji umożliwiających manipulowanie obrazami. Program została napisana w języku C# z użyciem frameworka Avalonia z wykorzystaniem biblioteki OpenCvSharp. Projekt został wykonany w ramach zajęć Algorytmy przetwarzania obrazów pod kierunkiem dr Anny Korzyńskiej.
