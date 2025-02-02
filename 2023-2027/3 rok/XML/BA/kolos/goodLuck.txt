@@ -1,0 +1,4 @@
+Dał plik.xsd i dane w Excela - trzeba było wygenerować z tych danych takiego XML, żeby się z sukcesem zwalidowal z tym xsd 
+Xsd to było pobrane z rządowego czegoś, to był plik JPK (u nas JPK MAG (1))
+
+"w tym roku nie zaliczył nikt" ~ BA :)

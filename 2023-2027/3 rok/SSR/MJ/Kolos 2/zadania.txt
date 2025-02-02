@@ -1,0 +1,19 @@
+W trakcie sesji FTP serwer wysyła do klienta plik podzielony na segmenty o długości 1460 bajtów każdy. Numer strumienia bajtów wysyłanego przez serwer, podany na etapie otwierania połączenia, to 5. W jaki sposób klient potwierdzi, że otrzymał od serwera piąty segment? Przedstawić krótko wyliczenie uzasadniające odpowiedź.
+
+Wskazówka: podać zawartość odpowiedniej flagi i pola w nagłówku TCP segmentu z potwierdzeniem.
+
+Wprowadź odpowiedź
+---------
+Skonstruować potok wypisujący aktualną liczbę nasłuchujących na lokalnej maszynie serwerów aplikacji działających na bazie TCP w wersji 6. Wskazówka: odpowiednie polecenie wypisuje tcp6 jako pierwszy parametr takiego serwera.
+--------
+W trakcie połączenia TCP strona A otrzymała od strony B segment potwierdzający odebranie ósmego segmentu danych wysłanych przez A. W segmencie tym pole „Window Size” miało wartość 20 KB. Ile segmentów, począwszy od dziewiątego, może wysłać strona A nie czekając na następne potwierdzenie od B? Zakłada się, że komunikacja przebiega w sieci Ethernet, a nagłówki IP i TCP mają po 20 B. Przedstawić krótko wyliczenie uzasadniające odpowiedź. Uwaga: 1 KB=1024 B!
+--------
+Jakie polecenie lub polecenia systemu Linux należy wydać, aby ustalić nazwy DNS i adresy IP wszystkich serwerów DNS strefy mkidn.gov.pl? Należy podać dwie wybrane nazwy wraz z odpowiednimi adresami IPv4.
+--------
+Rozważmy działanie trzech maszyn w systemie rozproszonym. Maksymalny współczynnik odchylenia zegara pierwszej maszyny: 5*10-5, drugiej: 17*10-5, trzeciej: 13*10-5. Co ile sekund należy synchronizować zegary tych maszyn, aby maksymalne odchylenie między nimi było nie większe niż 30 milisekund? Ile milisekund wyniesie maksymalne odchylenie czasu pierwszej maszyny między kolejnymi synchronizacjami? Należy przedstawić obliczenia uzasadniające odpowiedzi.
+-------
+W trakcie połączenia TCP strona A otrzymana od strony B segment późniejszego odebrania ósmego segmentu danych wysłanych przez A. W tym polu „Window Size” ogół wartości 10 KB. Ile segmentów, zabezpieczenie od dziewiątego, może otrzymać stronę A nie czekając na kolejne potwierdzenie od B? Zakłada się, że komunikacja w sieci Ethernet, a nagłówki IP i TCP mają po 20 B. Przedstawione krótko wyliczenie przyczyny odpowiedzi. Uwaga: 1 KB=1024 B!
+-------
+Skonstruować potok wyrejestrowujący sygnały nasłuchujące na urządzeniach końcowych serwerów aplikacji na platformie UDP w wersji 6.: urządzenie odbierające wypisuje UDP6 jako pierwszy parametr takiego serwera.
+-------
+Jakie polecenie lub polecenie systemu Linux powinno pochodzić, aby mieć nazwę DNS i adresy IP wszystkich serwerów pocztowych strefy mnisw.gov.pl? Należy podać dwie nazwy wraz z adresami.
