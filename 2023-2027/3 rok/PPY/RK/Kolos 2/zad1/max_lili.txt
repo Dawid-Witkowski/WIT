@@ -1,0 +1,6 @@
+## To co Rafałek miał na myśli
+def maxi_lili(lista):
+    return [li for li in lista if len(li) == max(list(map(len, lista)))]
+# Intrusive Thoughts
+def maxi_lili2(lista):
+    return [result_list for result_list in lista if len(result_list) == len(sorted(lista, key=len, reverse=True)[0])]

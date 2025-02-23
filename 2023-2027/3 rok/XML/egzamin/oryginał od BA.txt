@@ -1,0 +1,87 @@
+Czy XML to jest skrót od X-Markup Language?
+Czy XML to jest skrót od eXample Markup Language?
+Czy XML to jest skrót od eXtensible Markup Language?
+Czy XML to jest skrót od eXtra Modern Language?
+------------------------------------------------------------
+Czy XSD to jest skrót od eXtra Schema Definition?
+Czy XSD to jest skrót od XML Schema Definition?
+Czy XSD to jest skrót od eXtensible Schema Definition?
+Czy XSD to jest skrót od X-Schema Definition?
+------------------------------------------------------------
+Czy XSL to jest skrót od eXtensible Stylesheet Language?
+Czy XSL to jest skrót od eXample Stylesheet Language?
+Czy XSL to jest skrót od XML Stylesheet Language?
+Czy XSL to jest skrót od X-Stylesheet Language?
+------------------------------------------------------------
+Czy DTD to jest skrót od Document Type Definition?
+Czy DTD to jest skrót od Dynamic Type Definition?
+Czy DTD to jest skrót od Direct Type Definition?
+Czy DTD to jest skrót od Document Type Dictionary?
+------------------------------------------------------------
+Czy plik XML może używać pliku DTD dla definicji struktury dokumentu?
+Czy plik XML może używać pliku XSL dla definicji struktury dokumentu?
+Czy plik XML może używać pliku XSD dla definicji struktury dokumentu?
+------------------------------------------------------------
+Czy plik XML może używać pliku XSL dla przekształcenia dokumentu na inny format?
+Czy plik XML może używać pliku XSD dla przekształcenia dokumentu na inny format?
+Czy plik XML może używać pliku DTD dla przekształcenia dokumentu na inny format?
+------------------------------------------------------------
+Czy zadaniem formatu XML jest przechowywane danych?
+Czy zadaniem formatu XML jest zastąpienie HTML?
+Czy zadaniem formatu XML jest walidacja danych?
+Czy zadaniem formatu XML jest konwersja danych na inny format?
+------------------------------------------------------------
+Czy `<?xml version="1.0"?>` jest poprawną formą deklaracji wersji pliku XML?
+Czy `<!xml version="1.0">` jest poprawną formą deklaracji wersji pliku XML?
+Czy `<?xml version="1.0"/>` jest poprawną formą deklaracji wersji pliku XML?
+Czy `<xml version="1.0"/>` jest poprawną formą deklaracji wersji pliku XML?
+------------------------------------------------------------
+Czy `<?xml version="1.0"?><note><from>me</from><to>you</to><body>hi</body></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><from>me</from><to>you</to><body>hi</body>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><note><body>hi</body></note><note><body>there</body></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><note kind=1><from>me</from><to>you</to><body>hi</body></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><note kind="1"><from>me</from><to>you</to><body>hi</body></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><note><from>me</from><to>you</to><body13/></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><note><from>me</from><to>you</to><13body/></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><note><from>me</from><To>you</To><body/></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><note><from>me</from><to>you</to><body/></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><note><from>me</from><To>you</to><body>hi</body></note>` jest poprawną składnią XML?
+Czy `<?xml version="1.0"?><xmlnote><body>hi</body></xmlnote>` jest poprawną składnią XML?
+------------------------------------------------------------
+Czy `<![CDATA[ komentarz ]]>` jest poprawnym komentarzem w XML?
+Czy `<![CDATA[ komentarz ]]!>` jest poprawnym komentarzem w XML?
+Czy `<!CDATA[ komentarz ]!>` jest poprawnym komentarzem w XML?
+Czy `<!CDATA[ komentarz ]>` jest poprawnym komentarzem w XML?
+Czy `<CDATA> komentarz </CDATA>` jest poprawnym komentarzem w XML?
+Czy `<PCDATA> komentarz </PCDATA>` jest poprawnym komentarzem w XML?
+------------------------------------------------------------
+Czy `<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"?>` jest to poprawne podpięcie XSL?
+Czy `<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl">` jest to poprawne podpięcie XSL?
+Czy `<?xml-stylesheet type="text/xsl" href="cdcatalog.xsl"/>` jest to poprawne podpięcie XSL?
+Czy `<?xml:stylesheet type="text/xsl" href="cdcatalog.xsl"?>` jest to poprawne podpięcie XSL?
+Czy `<?xml::stylesheet type="text/xsl" href="cdcatalog.xsl"?>` jest to poprawne podpięcie XSL?
+Czy `<?stylesheet type="text/xsl" href="cdcatalog.xsl"?>` jest to poprawne podpięcie XSL?
+------------------------------------------------------------
+Czy `<xsl:value-of select="title"/>` przy transformacji XSL zostanie zastąpione odpowiednią zawartością elementu (tagu)?
+Czy `<xsl:value select="title"/>` przy transformacji XSL zostanie zastąpione odpowiednią zawartością elementu (tagu)?
+Czy `<xsl:select value="title"/>` przy transformacji XSL zostanie zastąpione odpowiednią zawartością elementu (tagu)?
+Czy `<xsl:select value-of="title"/>` przy transformacji XSL zostanie zastąpione odpowiednią zawartością elementu (tagu)?
+------------------------------------------------------------
+Czy `<xsl:value-of select="@title"/>` przy transformacji XSL zostanie zastąpione odpowiednią zawartością atributu (parametru)?
+Czy `<xsl:value select="@title"/>` przy transformacji XSL zostanie zastąpione odpowiednią zawartością atributu (parametru)?
+Czy `<xsl:select value="@title"/>` przy transformacji XSL zostanie zastąpione odpowiednią zawartością atributu (parametru)?
+Czy `<xsl:select value-of="@title"/>` przy transformacji XSL zostanie zastąpione odpowiednią zawartością atributu (parametru)?
+------------------------------------------------------------
+Czy `<xsl:for-each select="header">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:foreach select="header">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:for-each value="header">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:foreach value="header">` jest poprawnym elementem pliku XSL?
+------------------------------------------------------------
+Czy `<xsl:when test="@name = 'Janusz'">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:when test="name = 'Janusz'">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:when test="@price = 99.99">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:when test="price = 99.99">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:when test="@price < 99.99">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:when test="price &lt; 99.99">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:when test="@price &gt; 99.99">` jest poprawnym elementem pliku XSL?
+Czy `<xsl:when test="price > 99.99">` jest poprawnym elementem pliku XSL?
