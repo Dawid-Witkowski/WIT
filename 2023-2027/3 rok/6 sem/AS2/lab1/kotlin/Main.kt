@@ -1,4 +1,5 @@
-bubble sort:
+import java.io.File
+
 fun bubbleSortGigaSmart(tab: MutableList<Int>) {
     var swapCount = 0
     var compareCount = 0
@@ -26,11 +27,7 @@ fun bubbleSortGigaSmart(tab: MutableList<Int>) {
     println("Swaps: $swapCount")
     println("Comparisons: $compareCount")
 }
-Swaps: 25299075
-Comparisons: 49990122
 
-
-selection:
 fun reallyWellWrittenSelectionSortThatWillPassOnTheFourthTry(tab: MutableList<Int>) {
     var swapCount = 0
     var compareCount = 0
@@ -55,11 +52,7 @@ fun reallyWellWrittenSelectionSortThatWillPassOnTheFourthTry(tab: MutableList<In
     println("swaps: $swapCount")
     println("comparisons: $compareCount")
 }
-swaps: 10000
-comparisons: 50005000
 
-
-insertion:
 fun omgInsertionSort(tab: MutableList<Int>) {
     var swapCount = 0
     var compareCount = 0
@@ -84,6 +77,14 @@ fun omgInsertionSort(tab: MutableList<Int>) {
     println("swaps: $swapCount")
     println("comparisons: $compareCount")
 }
-swaps: 25299075
-comparisons: 25309066
+
+
+fun main(args: Array<String>) {
+    val file = File("src/main/data.txt") // I cannot be bothered to parse a csv in kotlin, I'm just an android dev sorry!
+    val data = mutableListOf<Int>()
+    file.forEachLine {
+        data.add(it.toInt()) // spotless code I know
+    }
+    omgInsertionSort(data)
+}
 

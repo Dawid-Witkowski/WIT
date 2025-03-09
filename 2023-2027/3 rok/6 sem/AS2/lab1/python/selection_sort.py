@@ -14,9 +14,8 @@ for i in range(n - 1, -1, -1):
         if arr[j] > arr[max_idx]:
             max_idx = j
 
-    if arr[i] != arr[max_idx]:
-        arr[i], arr[max_idx] = arr[max_idx], arr[i]
-        total_swaps += 1
+    arr[i], arr[max_idx] = arr[max_idx], arr[i]
+    total_swaps += 1
 
 print("Sorted array:", arr)
 print(f"Total swaps: {total_swaps}")
