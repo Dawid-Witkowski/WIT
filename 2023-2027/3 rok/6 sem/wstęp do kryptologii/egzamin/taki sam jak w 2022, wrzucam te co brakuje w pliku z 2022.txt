@@ -1,0 +1,15 @@
+Współczesne szyfr blokowe mogą być projektowane w oparciu o:
+Wybierz od 1 do 4 poprawnych odpowiedzi:
+rejestry z liniowym sprzężeniem zwrotnym LFSR,
+strukturę iteracyjną Merklego-Damgarda MD,
+architekturę sieci Feistela,
+architekturę sieci podstawieniowo-przestawieniowej SPN,
+
+
+
+Funkcja skrótu  SHA – 3:
+Wybierz od 1 do 4 poprawnych odpowiedzi:
+daje skrót o długości 224, 256, 384 lub 512 bitów,
+jest standardem funkcji skrótu,
+zbudowana jest w oparciu o konstrukcję Merkle-Damgarda (MD),
+zbudowana jest w oparciu o architekturę "gąbki" (sponge construction),
