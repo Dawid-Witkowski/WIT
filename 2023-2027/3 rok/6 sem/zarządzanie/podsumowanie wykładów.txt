@@ -1,0 +1,488 @@
+wykład 1
+Oto podsumowanie kluczowych punktów z wykładu o zarządzaniu projektami
+
+### 1. Czym jest projekt  
+- Definicja Tymczasowe, unikalne przedsięwzięcie ukierunkowane na cel, z jasnymi ramami czasowymi i budżetem.  
+- Atrybuty  
+  - Nowatorskość, złożoność, niepowtarzalność.  
+  - Ograniczenia czas, koszty, zakres (tzw. żelazny trójkąt).  
+- Przykłady Przeprowadzka firmy, wdrożenie systemu IT, ślub, budowa bomby atomowej.  
+
+### 2. Projekty vs. Działania operacyjne  
+- Procesy operacyjne Powtarzalne, rutynowe działania (np. codzienna produkcja w fabryce).  
+- Projekty Wprowadzają zmiany w organizacji (np. uzyskanie certyfikatu ISO, reorganizacja procesów).  
+- Kluczowy wniosek Zmiany w organizacji należy wprowadzać metodą projektową.  
+
+### 3. Wyzwania w projektach  
+- Ryzyko oporu Średnia kadra kierownicza często blokuje zmiany (obawa o utratę pozycji).  
+- Rola kierownictwa Aktywne wsparcie kierownictwa jest krytyczne dla sukcesu projektu.  
+- Strony interesów  
+  - Klient Dzieli się na biznes (kosztyczas) i użytkowników (funkcjonalnośćwygoda).  
+  - Dostawca Realizuje projekt.  
+
+### 4. Metodyki zarządzania  
+- Tradycyjne (np. PRINCE2)  
+  - Stały zakres, czas, budżet.  
+  - Skupienie na dokumentacji i planowaniu.  
+- Zwinne (Agile)  
+  - Elastyczny zakres, iteracyjne dostarczanie wartości.  
+  - Skupienie na satysfakcji klienta.  
+- Hybrydowe Łączenie elementów obu metod (np. gdy wymagania są częściowo niejasne).  
+
+### 5. Kluczowe pojęcia  
+- Wyniki (Outputs) Namacalne produkty projektu (np. system IT).  
+- Rezultaty (Outcomes) Miękkie efekty (np. poprawa wydajności procesu).  
+- Korzyści (Benefits) Mierzalne wartości biznesowe (np. wzrost przychodów o 10%).  
+- Uzasadnienie biznesowe Dokument potwierdzający, że korzyści przewyższają koszty.  
+
+### 6. Praktyczne wskazówki  
+- Tolerancje Określ dopuszczalne odchylenia od planu (np. budżet ±5%).  
+- Komunikacja Regularnie informuj kierownictwo o postępach i ryzykach.  
+- Zespół Doświadczenie zespołu wpływa na wybór metodyki (brak doświadczenia → metody tradycyjne).  
+
+### 7. PRINCE2 (edycja 6)  
+- 6 wymiarów kontroli Czas, koszty, zakres, jakość, ryzyko, korzyści.  
+- Filozofia Projekty muszą mieć uzasadnienie biznesowe i jasną strukturę ról (m.in. kierownik projektu, komitet sterujący).  
+
+---
+
+Najważniejsza myśl Projekty to narzędzie do wprowadzania zmian – sukces zależy od równowagi między celami, zasobami i ludźmi.  
+Dla studentów Obecność na laboratoriach jest kluczowa (30% oceny), a test końcowy decyduje o ocenie.
+
+wykład 2
+Oto podsumowanie kluczowych elementów z pliku Prrrojek.txt, skupiające się na metodologii PRINCE2 i zarządzaniu projektami
+
+---
+
+### 1. Podstawy PRINCE2
+- 7 Zasad (Pryncypiów) – Fundamenty, bez których projekt nie jest PRINCE2
+  1. Uzasadnienie biznesowe – Projekt musi być stale zasadny ekonomicznie.
+  2. Korzystanie z doświadczeń – Analiza podobnych projektów (szczególnie w obszarach oszacowanie pracochłonności i ryzyka).
+  3. Zdefiniowane role i obowiązki – Jasny podział odpowiedzialności (biznes, użytkownicy, dostawcy).
+  4. Zarządzanie etapami – Projekt dzielony na etapy; przejście do kolejnego wymaga zatwierdzenia przez Komitet Sterujący (KS).
+  5. Zarządzanie z tolerancjami – Cele określane w widełkach (np. czas rok ±5%), nie punktowo.
+  6. Koncentracja na produktach – Zakres = suma wytworzonych produktów; jakość dotyczy cech produktów.
+  7. Dostosowanie do projektu – Metodyka skalowana do rozmiaruryzyka projektu (np. w małych projektach pomija się zbędne elementy).
+
+- 7 Tematów – Obszary, o których kierownik projektu musi nieustannie pamiętać
+  - Uzasadnienie biznesowe, Organizacja, Jakość, Plany, Ryzyko, Zmiany (zagadnienia), Postępy.
+  Np. Postępy odpowiada na pytania Gdzie jesteśmy Czy zdążymy.
+
+- 7 Procesów – Fazy cyklu życia projektu
+  1. Przygotowanie projektu (pre-project),  
+  2. Inicjowanie projektu,  
+  3. Sterowanie etapem,  
+  4. Zarządzanie wytwarzaniem produktów,  
+  5. Zarządzanie dostarczeniem etapu,  
+  6. Zamknięcie projektu,  
+  7. Dodatkowo Eksploatacja produktów (po zamknięciu projektu).
+
+---
+
+### 2. Kluczowe Koncepcje
+- Struktura zarządzania
+  - Komitet Sterujący (KS) – Decyduje strategicznie (np. zatwierdza plany, zamyka etapy). Kierownik projektu nie podejmuje decyzji strategicznych!
+  - Kierownik Projektu (PM) – Odpowiada za operacyjne zarządzanie (planowanie, delegowanie, monitorowanie, sterowanie).
+  - Zespoły robocze – Wykonują zadania.
+  - Nadzór Projektu (Project Assurance) – Nadzoruje krytyczne aspekty (np. finanse, jakość).
+  - Obsługa Zmian – Analizuje wnioski o zmiany.
+
+- Cele projektu – Definiowane w 6 wymiarach z tolerancjami
+  - Czas, Koszt, Zakres, Jakość, Korzyści, Ryzyko.  
+  Przykład Cel czasowy = rok ±5%, nie dokładnie rok.
+
+- Ryzyko – Mierzone jako wartość oczekiwana `prawdopodobieństwo × koszt materializacji`.  
+  Przykład Ryzyko opóźnienia (P=25%, koszt=30 tys. zł) → wartość oczekiwana = 7,5 tys. zł.
+
+- Przygotowanie projektu (pre-project) – Kluczowy etap!  
+  - Cel Weryfikacja zasadności projektu zanim wyda się pieniądze.  
+  - Efekt Project Brief (pol. założenia projektu – niestety myląca nazwa), zawierający m.in.  
+    - Zarys uzasadnienia biznesowego,  
+    - Opis podejścia (np. kupić gotowiec vs. rozwijać własny),  
+    - Strukturę produktu końcowego (drzewo produktów),  
+    - Kryteria akceptacji (mierzalne!).  
+  - Czas Dla rocznego projektu ok. 2 tygodnie.
+
+---
+
+### 3. Ważne Wskazówki Praktyczne
+- Sankt kost (koszty utopione) – Nie kontynuuj projektu tylko dlatego, że już zainwestowano czaspieniądze. Decyduj w oparciu o aktualne uzasadnienie biznesowe.
+- Dostosowanie PRINCE2 – W małych projektach redukuj narzut administracyjny (np. rezygnuj z części raportów).
+- Błędy tłumaczeń
+  - Project Brief → założenia projektu (powinno być zarys projektu).  
+  - Controlling → sterowanie (nie kontrolowanie!).
+- Doświadczenie – Szukaj lekcji z historii projektów w dwóch obszarach pracochłonność i ryzyko.
+
+---
+
+### 4. Rekomendowane Źródła
+- Książki  
+  - PRINCE2® ed.6 (do egzaminu),  
+  - R. Wysocki, Effective Project Management ed.7.  
+- Uwaga Polskie tłumaczenia PRINCE2 mają niekonsekwencje językowe (np. kontrolowanie vs. sterowanie).
+
+---
+
+Podsumowanie PRINCE2 to strukturalne podejście do zarządzania projektami, oparte na 7 zasadach, 7 tematach i 7 procesach. Kluczowe elementy to etapowość, rola Komitetu Sterującego, tolerancje w celach oraz nacisk na produkty (nie tylko zadania). Etap przygotowania projektu jest krytyczny – pozwala uniknąć inwestycji w nieuzasadnione przedsięwzięcia.
+
+wykład 3
+Oto podsumowanie kluczowych punktów z wykładu o zarządzaniu projektami wg PRINCE2, ze szczególnym uwzględnieniem planowania
+
+### 1. Podstawy PRINCE2
+- Strukturalne zarządzanie opiera się na 4 zintegrowanych elementach  
+  Tematy (obszary zarządzania), Pryncypia (podstawowe zasady), Procesy (ciągi działań), Środowisko (kontekst projektu).
+- 7 pryncypiów (m.in. uzasadnienie biznesowe, rola komitetu sterującego).
+- Planowanie jest kluczowym tematem – odpowiada na pytania jak, kiedy, kto i za ile.
+
+---
+
+### 2. Rola planowania
+- Dlaczego planować  
+  Brak planu = planowanie porażki (If you fail to plan, you plan to fail).  
+  Krzywa kosztów pokazuje oszczędność czasu na starcie prowadzi do wyższych kosztów i chaosu później.
+- Poziomy planowania  
+  - Plan projektu (całościowy),  
+  - Plany etapów (szczegółowe dla każdego etapu),  
+  - Plany zespołów (opcjonalne),  
+  - Plany nadzwyczajne (reakcja na problemy).
+
+---
+
+### 3. Planowanie oparte na produktach
+- Zakres projektu to suma wszystkich produktów do wytworzenia (tzw. PBS – Product Breakdown Structure).
+- Zasady PBS  
+  - Reguła 100% Dekompozycja musi być kompletna (elementy składowe w 100% tworzą produkt nadrzędny).  
+  - Jeden rodzic Każdy produkt ma tylko jeden element nadrzędny.  
+  - Poziom szczegółowości Dekomponujemy tylko tyle, ile potrzebujemy do kontroli (nie do teoretycznego minimum!).
+- Diagram następstwa produktów Pokazuje kolejność wytwarzania produktów (weryfikuje kompletność PBS).
+
+---
+
+### 4. Proces planistyczny
+- Kroki  
+  1. Opis produktu końcowego (z kryteriami akceptacji!).  
+  2. Budowa PBS.  
+  3. Opis produktów składowych.  
+  4. Diagram następstwa produktów.  
+  5. Szacowanie czas, zasoby, koszty.  
+  6. Tworzenie harmonogramu (np. wykres Gantta).
+- Techniki szacowania  
+  - Metoda trzypunktowa (optymistyczny + pesymistyczny + 4 × realistyczny)  6.  
+  - Top-down vs. bottom-up Szacowanie od ogółu do szczegółu (szybsze) vs. od szczegółu (dokładniejsze).  
+  - Planowanie poker Dla zespołów Agile.
+
+---
+
+### 5. Etapy vs. fazy dostarczania
+- Etapy zarządcze  
+  Rozłączne okresy zatwierdzane przez komitet sterujący (decyzja o kontynuacji projektu na koniec etapu).  
+- Fazy dostarczania  
+  Nakładające się prace specjalistyczne (np. analiza, projektowanie, wdrożenie).  
+- Kluczowa zasada Jeśli faza dostarczania przekracza etap, trzeba precyzyjnie zdefiniować, jaka część produktu będzie gotowa na koniec etapu.
+
+---
+
+### 6. Wyzwania i praktyczne wskazówki
+- Diagram następstwa produktów W teorii obowiązkowy w PRINCE2, w praktyce często pomijany (zastępowany harmonogramem).  
+- Elastyczność PRINCE2 Dopuszcza elementy Agile (np. epiki, user stories).  
+- Komunikacja Stosuj parafrazowanie i pytania Kiplinga (5W+1H What, Why, When, How, Where, Who), aby uniknąć nieporozumień.  
+- Rola kierownika projektu  
+  - W PRINCE2 Biurokrata realizujący plan (decyzje strategiczne u komitetu sterującego).  
+  - W PMI (PMBOK) Lider z autonomią (różnica kulturowa!).
+
+---
+
+### 7. Podsumowanie kluczowych wniosków
+- Plan = punkt odniesienia Bez niego niemożliwa jest kontrola projektu.  
+- Przygotowanie to podstawa Oszczędza czas i koszty później (patrz krzywa kosztów!).  
+- Nie idealizuj metodyki PRINCE2 to narzędzie – dostosuj je do realiów projektu (np. pomijaj nadmiarową biurokrację).  
+- Ludzie ponad procesy Nowe edycje PRINCE2 kładą większy nacisk na zarządzanie zespołem (People jako 8. element).
+
+ Cytat na zakończenie  
+ Nie warto dekomponować produktów do teoretycznego minimum – rób to tylko na poziomie, który chcesz kontrolować.
+
+wykład 4
+Oto podsumowanie kluczowych punktów z pliku ZPI4.txt dotyczących zarządzania projektami w metodologii PRINCE2
+
+### 1. Główne zadanie kierownika projektu  
+- Cel Dostarczenie wszystkich produktów projektu zgodnie z kryteriami akceptacji.  
+- Sukces projektu Mierzony przez odebranie produktów przez klienta, a nie tylko wykonanie zaplanowanych prac.  
+- Rola kryteriów akceptacji Muszą być precyzyjne i bezdyskusyjne, aby chronić interesy dostawcy podczas odbioru.  
+
+### 2. Struktura podziału produktów (PBSSPP)  
+- Zasada 100% Każdy ojciec w drzewie produktów musi mieć kompletną listę dzieci. Jeśli wszystkie podprodukty są wytworzone, produkt nadrzędny może być złożony.  
+- Zakres projektu Definiowany przez PBS – dostarczenie wszystkich produktów = realizacja zakresu.  
+- Różnica między PRINCE2 a PMI  
+  - PRINCE2 (edycja 6) Skupia się na produktach.  
+  - PMIPRINCE2 (edycja 7) Kładzie nacisk na wykonanie prac.  
+
+### 3. Organizacja zespołu projektowego  
+- Role vs. stanowiska Rola w projekcie (np. analityk, tester) ≠ stanowisko w organizacji.  
+- Kluczowe elementy  
+  - Komitet sterujący (KS) Odpowiada za cele projektu, podejmuje decyzje strategiczne. Musi być odpowiednio umocowany.  
+  - Kierownik projektu Odpowiada za dostarczenie produktów, monitorowanie ryzyk i zgłaszanie problemów do KS.  
+- Modele ról zespołowych (Belbin)  
+  - Role zadaniowe Lokomotywa, Implementer, Perfekcjonista.  
+  - Role społeczne Poszukiwacz źródeł, Koordynator, Człowiek do zadań specjalnych.  
+  - Role intelektualne Kreator, Ewaluator, Specjalista.  
+  - Klucz Równowaga ról – zespół musi mieć różne kompetencje.  
+
+### 4. Macierz odpowiedzialności (RASCI)  
+- Elementy  
+  - R (Responsible) Odpowiedzialny za wykonanie.  
+  - A (Accountable) Nadzorujący (decyzyjny).  
+  - S (Support) Wspierający.  
+  - C (Consulted) Konsultowany.  
+  - I (Informed) Informowany.  
+- Zastosowanie Eliminuje niejasności w podziale zadań (np. Kto odpowiada za testy).  
+
+### 5. Proces inicjowania projektu  
+- Cel Potwierdzenie, czy projekt jest wart realizacji przed pełnym zaangażowaniem zasobów.  
+- Dokument Inicjujący Projekt (DIP) Zawiera  
+  - Uzasadnienie biznesowe (korzyści).  
+  - Plan projektu (nie tylko harmonogram!).  
+  - Podejście do zarządzania ryzykiem, jakością, zmianami i komunikacją.  
+  - Kryteria akceptacji produktów.  
+- Decyzja gono go Oparta na DIP – ostatni moment na rezygnację z projektu bez dużych strat.  
+
+### 6. Kluczowe wnioski praktyczne  
+- Komunikacja Regulamin pracy KS i precyzyjne kryteria akceptacji minimalizują konflikty.  
+- Ludzie  procesy Kierownik projektu musi dopasować styl przywództwa (model Herseya-Blancharda) do poziomu dojrzałości zespołu.  
+- Unikanie złych projektów Faza przygotowania i inicjowania służy weryfikacji opłacalności – firma nie może marnować zasobów.  
+
+### Podsumowanie  
+Transkrypt podkreśla praktyczne aspekty PRINCE2 od planowania opartego na produktach, przez budowę zespołu, po dokumentację inicjującą. Kluczem jest równowaga między biurokracją (np. DIP) a elastycznością (np. dopasowanie ról w zespole).
+
+wykład 5
+Oto podsumowanie kluczowych elementów z dokumentu (transkrypcji wykładu o zarządzaniu projektami wg PRINCE2)
+
+---
+
+### 1. Dokumentacja Inicjowania Projektu (DIP)
+- Cel Stanowi formalną podstawę projektu (obiekt odniesienia) zatwierdzoną przez Komitet Sterujący (KS).
+- Zawartość
+  - Uzasadnienie biznesowe (często aktualizowane!).
+  - Plany projektu (w tym plan jakości, komunikacji, zarządzania korzyściami).
+  - Role i obowiązki.
+  - Mechanizmy sterowania (np. liczba etapów, tolerancje).
+- Status żywy Dokumenty muszą odzwierciedlać aktualny stan projektu (zwłaszcza plan i uzasadnienie biznesowe). Zmiany wymagają ponownego zatwierdzenia przez KS.
+- Praktyczna rada Dla poufnych informacji tworzyć wyciąg z DIP.
+
+---
+
+### 2. Zarządzanie Jakością
+- Koncentracja na produktach Jakość definiowana przez spełnienie kryteriów akceptacji produktów (zapisanych w opisach produktów).
+- Proces
+  - Klient → Oczekiwania jakościowe → Kryteria akceptacji (mierzalne, spriorytetyzowane!) → Opisy produktów → Rejestr jakości (planowane działania testowe).
+  - Weryfikacja jakości → Zapisy testów → Akceptacja produktu.
+- Kluczowe elementy
+  - Procedura odbioru produktu Musi być uzgodniona z klientem (np. czas trwania testów). Zalecane etapy przyjęcie do testów → formalny odbiór.
+  - Różnica QA vs. nadzór projektu QA (audyty jakości) to funkcja organizacji, a nie rola w projekcie.
+
+---
+
+### 3. Zarządzanie Zmianami i Zagadnieniami (Issues)
+- Zagadnienie (Issue) Wszystkie nieplanowane zdarzenia wymagające działań (np. problemy, wnioski o zmianę, odstępstwa od specyfikacji).
+- Rodzaje zagadnień
+  - Wniosek o zmianę (CR) Wymaga analizy wpływu (kosztczas) i decyzji Change Board (reprezentanci klientadostawcy).
+  - Odstępstwo Niespełnienie wymagań produktu – wymaga akceptacji klienta.
+  - Problem operacyjny (np. nagła rezygnacja kluczowego specjalisty).
+- Procedura Identyfikuj → Analizuj → Proponuj rozwiązania → Decyduj → Wdrażaj. Rejestruj w Rejestrze Zagadnień.
+- Rada W złożonych projektach osobne rejestry dla zmian i problemów ułatwiają zarządzanie.
+
+---
+
+### 4. Zarządzanie Komunikacją i Interesariuszami
+- Analiza interesariuszy Kluczowa! Identyfikuj wszystkich (wewnętrznychzewnętrznych), którzy mogą wpływać na projekt lub być pod jego wpływem.
+- Macierz komunikacji Dokument planujący regularne spotkaniaraporty (kto kiedy w jakiej formie).
+- Podejście w DIP Opisuje narzędzia komunikacji, potrzeby informacyjne i role.
+
+---
+
+### 5. Proces Kończenia Etapu
+- Cel Podsumowanie etapu + zatwierdzenie planu kolejnego etapu przez KS.
+- Działania
+  - Aktualizacja uzasadnienia biznesowego i planu projektu.
+  - Przegląd osiągnięć, jakości, ryzyk i zagadnień.
+  - Przygotowanie Raportu Końcowego Etapu (struktura streszczenie, przegląd celów, efektywność zespołu, podsumowanie produktów, doświadczenia, prognozy).
+- Decyzja KS Zgoda na kolejny etap, wstrzymanie lub zamknięcie projektu.
+
+---
+
+### 6. Kluczowe Koncepcje
+- Obiekt odniesienia (Baseline) Zatwierdzona wersja dokumentu (np. planu projektu). Modyfikacja wymaga formalnej procedury zmiany.
+- Rejestr doświadczeń Na bieżąco zapisuj wnioski! (np. co poszło dobrzeźle). Bez tego traci wartość.
+- Zarządzanie konfiguracją Kontrola wersji dokumentów i produktów (np. numeracja wersja 1.0 = zatwierdzona, 1.1 = robocza).
+
+---
+
+### Praktyczne Wskazówki z Wykładu
+- DIP Unikaj 100-stronicowych dokumentów – dziel na mniejsze części (po 5-10 stron).
+- Plan projektu Aktualizuj go regularnie, ale oznaczaj wersje zatwierdzone (baseline).
+- Odbiory produktów Zawsze ustalaj formalny proces z klientem (np. podpisanie przyjęcia do testów).
+- Raporty Używaj macierzy komunikacji, aby precyzyjnie określić odbiorców raportów kończących etap.
+
+---
+Podsumowanie PRINCE2 kładzie nacisk na kontrolowaną elastyczność – dokumenty są żywe, ale zmiany wymagają formalnego zatwierdzenia. Klucz to jasne role, skupienie na produktach i ciągła weryfikacja uzasadnienia biznesowego.
+
+wykład 6
+Oto podsumowanie kluczowych punktów z wykładu o zarządzaniu ryzykiem w projektach według metodyki PRINCE2
+
+### 1. Definicja ryzyka  
+   - Ryzyko to niepewne przyszłe zdarzenie (lub zbiór zdarzeń), które wpływa na cele projektu.  
+   - Obejmuje zarówno zagrożenia (skutki negatywne) jak i szanse (pozytywne okazje).  
+   - Miarą ryzyka jest prawdopodobieństwo wystąpienia × skutek (np. finansowy, czasowy).  
+
+### 2. Procedura zarządzania ryzykiem (5 kroków)  
+   1. Identyfikacja Zbieranie ryzyk (np. burza mózgów, listy kontrolne, doświadczenia).  
+   2. Ocena  
+      - Analiza prawdopodobieństwa i wpływu (skala np. 1–5).  
+      - Macierz ryzyka Wizualizacja priorytetów (np. czerwone = wysokie ryzyko).  
+   3. Planowanie reakcji  
+      - Strategie Unikanie, redukcja, przeniesienie, akceptacja (dla zagrożeń); wykorzystanie, wzmacnianie, udostępnianie (dla szans).  
+   4. Wdrażanie Realizacja zaplanowanych działań.  
+   5. Komunikacja Raportowanie interesariuszom.  
+
+### 3. Rejestr ryzyk  
+   - Kluczowe elementy  
+     - Opis (przyczyna → zdarzenie → skutek).  
+     - Kategorie (np. techniczne, prawne, ekonomiczne – PESTLE).  
+     - Prawdopodobieństwo, wpływ, wartość oczekiwana (p × koszt).  
+     - Właściciel ryzyka (osoba odpowiedzialna).  
+     - Planowane działania i status.  
+   - Praktyczne wskazówki  
+     - Oznaczaj ryzyka wewnętrzne (nieujawniane klientowi) i zewnętrzne.  
+     - Ryzyk nie usuwa się – zamyka się po rozwiązaniu lub zawiesza.  
+
+### 4. Metodyka PRINCE2 a ryzyko  
+   - Ryzyko jest jednym z 7 tematów (obok m.in. biznes case, jakości).  
+   - Rejestr ryzyk tworzy się już na etapie przygotowania projektu.  
+   - Podejście do zarządzania ryzykiem dokumentuje się w Dokumencie Inicjowania Projektu (DIP).  
+
+### 5. Praktyczne wnioski  
+   - Systematyczność Ryzykiem zarządza się codziennie (np. punkt na spotkaniach zespołu).  
+   - Transparentność Rejestr powinien być dostępny dla stron projektu (klientdostawca), ale z filtrowaniem wrażliwych informacji.  
+   - Konkretne opisy Skutki muszą być mierzalne (np. opóźnienie o 2 tyg. = strata 20 tys. PLN).  
+   - Szanse Nie tylko przeciwdziałaj zagrożeniom – aktywnie zwiększaj szanse powodzenia (np. zatrudnienie eksperta przyspieszającego projekt).  
+
+### 6. Przykłady  
+   - Ryzyko negatywne Utrata kluczowego pracownika → opóźnienie projektu o 2 miesiące → koszt 50 tys. PLN.  
+     Reakcja Rozmowy motywacyjne, szkolenia, plan awaryjny rekrutacji.  
+   - Ryzyko pozytywne Szansa na szybsze dostawy od dostawcy → skrócenie harmonogramu.  
+     Reakcja Negocjacje umowy, przygotowanie logistyki.  
+
+---
+
+Kluczowy przekaz Zarządzanie ryzykiem to nie formalność – to ciągły proces identyfikacji, analizy i działań, który decyduje o sukcesie projektu. Uwzględniaj zarówno zagrożenia, jak i szanse!  
+
+Materiał na podstawie wykładu z 2025 r., zgodny z PRINCE2 i MOR (Management of Risk).
+
+wykład 7
+Oto podsumowanie kluczowych punktów z transkryptu wykładu o zarządzaniu projektami
+
+### Główne tematy wykładu
+1. Monitorowanie postępów  
+   - Kluczowe pytanie kierownika projektu Czy zdążymy na termin.  
+   - Konieczność prognozowania końca projektu na podstawie aktualnych danych (koszty, harmonogram).  
+   - Narzędzia krzywa S (wizualizacja planowanych vs. rzeczywistych kosztów) i Earned Value Management (EVM).  
+     - Wskaźniki `CPI` (efektywność kosztowa), `SPI` (efektywność czasowa), `BAC` (planowany budżet), `EAC` (prognozowany koszt końcowy).  
+   - Zalecenie Zadania w harmonogramie nie dłuższe niż 2 tygodnie dla precyzyjnej oceny postępów.
+
+2. Raporty w projektach  
+   - Raport okresowy Stan projektu, odchylenia od planu, zagadnieniaryzyka.  
+   - Raport z punktu kontrolnego Generowany przy osiągnięciu kluczowych kamieni milowych.  
+   - Raport końcowy etapuprojektu Podsumowanie po zakończeniu fazy lub całego projektu.  
+   - Zestawienie statusu produktów Aktualizacja oparta na strukturze podziału produktów (SPP).
+
+3. Zarządzanie ryzykiem  
+   - Ryzyka szanse (pozytywne) vs. zagrożenia (negatywne).  
+   - Rejestr ryzyk powinien zawierać wskaźniki wczesnego ostrzegania (np. prognoza pogody dla ryzyka opóźnień).  
+   - Dylemat Jak dzielić się ryzykami z klientem Zalecenie Jedna baza ryzyk z filtrami (nie dwa osobne dokumenty).
+
+4. Rolę kierownika projektu  
+   - Obowiązek zgłaszania sytuacji nadzwyczajnych (np. przekroczenie tolerancji).  
+   - Przygotowanie planu nadzwyczajnego w odpowiedzi na problemy.  
+   - Etyka Unikać ukrywania problemów przed klientem – krótkoterminowe korzyści często prowadzą do długoterminowych strat.
+
+5. Struktura dokumentacji (PRINCE2)  
+   - PID (Project Initiation Documentation) zawiera podejścia do zarządzania  
+     - Ryzykami, zmianami, jakością, komunikacją.  
+   - Plan projektu to nie tylko harmonogram – obejmuje też m.in. macierz komunikacji, strukturę zespołu.  
+
+### Kontekst dodatkowy
+- Problemy organizacyjne Niska frekwencja na zajęciach (5 osób w sali), dyskusja o terminie egzaminu (prawdopodobnie w sesji).  
+- Akcent praktyczny Wykładowca podkreślał realne dylematy kierowników (np. rozmowa z prezesem o opóźnieniach) i zalecał uczciwość wobec klienta.  
+- Metody aktywizujące Pytania do studentów, zachęta do analizy przypadku czy zdążymy na czas.
+
+### Kluczowe cytaty
+ Jedna czterdziesta waszej kariery zawodowej – nie warto marnować roku na przegrany projekt.  
+ Kierownik projektu nie przychodzi płakać, przychodzi z analizą i propozycjami rozwiązań.
+
+Podsumowując Wykład łączył teorię (PRINCE2, EVM) z praktycznymi scenariuszami, podkreślając znaczenie transparentności, prognozowania i etycznego zarządzania w projektach.
+
+wykład 8
+Oto podsumowanie kluczowych punktów z wykładu na temat zarządzania projektami (metodologia PRINCE2), ze szczególnym uwzględnieniem procesu zamykania projektu
+
+### 1. Proces zamykania projektu w PRINCE2
+- Cel Formalne zakończenie projektu, weryfikacja osiągnięć i wyciągnięcie wniosków.
+- Kluczowe działania
+  - Przekazanie produktów klientowiodpowiednim jednostkom (np. działom utrzymania).
+  - Ocena projektu przez porównanie wskaźników
+    - Zielone vs. czarne Rzeczywiste wyniki vs. pierwotne założenia (z dokumentacji inicjującej projekt).  
+    Dlaczego ważne Pokazuje, czy projekt dostarczył zamierzoną wartość biznesową.
+    - Zielone vs. niebieskie Rzeczywiste wyniki vs. ostatnia zatwierdzona wersja planu (po zmianach).  
+    Dlaczego ważne Ocena efektywności zespołu projektowego.
+  - Przygotowanie raportu końcowego (zawiera m.in. przegląd uzasadnienia projektu, doświadczenia, rekomendacje).
+  - Zebranie doświadczeń (najlepiej na bieżąco podczas projektu, nie tylko na końcu!).
+- Decyzja o zamknięciu Autoryzuje ją komitet sterujący (KS), nie kierownik projektu. KS może podjąć decyzję o
+  - Planowym zamknięciu (gdy cele są osiągnięte).
+  - Przedwczesnym zamknięciu (gdy projekt nie ma szans na sukces – np. przekroczony budżet, zmiana priorytetów).
+
+---
+
+### 2. Wyzwania przy zamykaniu
+- Koszty utopione (sunk cost fallacy) Psychologiczna presja, by kontynuować projekt mimo złych perspektyw (już tyle zainwestowaliśmy).  
+  Rozwiązanie Decydenci (KS) powinni skupiać się na przyszłych korzyściach, a nie przeszłych wydatkach.
+- Pełzające problemy (creeping)
+  - Creeping scope Niekontrolowane rozszerzanie zakresu (np. dodawanie drobnych funkcji bez formalnych zmian).
+  - Creeping effort Ukrywanie opóźnień przez zespół (nadrobimy w weekend).
+  Skutek Projekt oddalony od celów, trudny do zamknięcia.
+- Przekazanie produktów Konieczność wcześniejszego uwzględnienia wymagań jednostek przejmujących produkty (np. działów utrzymania). Brak dokumentacji = ryzyko odmowy przyjęcia produktów!
+
+---
+
+### 3. Kluczowe wnioski z raportu Standish Group
+- Tylko 16% projektów IT (badanie z lat 90.) kończyło się sukcesem (czas + budżet + satysfakcja klienta).
+- Podejście tradycyjne vs. zwinne (agile)
+  - Projekty zwinne mają 3x wyższą skuteczność (39% sukcesów vs. 11% w projektach tradycyjnych).
+  - W dużych projektach różnica jest jeszcze większa (6x!).
+  Dlaczego Agile lepiej radzi sobie ze zmianami wymagań i angażuje klienta na bieżąco.
+- Definicja sukcesu Nie tylko triple constraint (czas, koszt, zakres), ale satysfakcja klienta z wartości biznesowej.
+
+---
+
+### 4. Nowości w PRINCE2 7 (vs. edycja 6)
+- Struktura zarządzania Dodano ludzi (interesariusze) jako 5. element (obok zasad, praktyk, procesów i kontekstu).
+- Praktyki (dawniej tematy)
+  - W zarządzaniu jakością dodano jakość operacyjną (obok planowania i kontroli).
+  - Nowa praktyka Projektowanie i rozwój organizacji.
+- Zmiana terminologii
+  - Komitet sterujący → Rada Projektu (ale w praktyce wciąż często używany skrót KS).
+  - Założenia projektu → Zarys projektu (Project Brief).
+- 7 wymiarów sukcesu (zamiast 6) Dodano zrównoważony rozwój.
+
+---
+
+### 5. Złote rady dla kierowników projektów
+- Zadawaj kluczowe pytanie Czy to, co robimy, przyniesie klientowi dodatkową wartość biznesową. Jeśli nie – alarmuj KS!
+- Zbieraj doświadczenia na bieżąco (szczególnie w obszarach ryzyka i szacowanie pracochłonności). Unikaj podsumowań na ostatnią chwilę.
+- Dopasuj metodę do projektu Nie ma uniwersalnego rozwiązania. Wybierz tradycyjne, agile lub hybrydę w zależności od
+  - Jasności wymagań klienta,
+  - Doświadczenia zespołu,
+  - Poziomu ryzyka.
+
+---
+
+Bonus Przykładowe pytanie egzaminacyjne (jak w pliku)  
+Przygotowanie planowego zamknięcia projektu jest koniecznym działaniem w procesie zamykania projektu. Wymagane jest także dla przedwczesnego zamknięcia.  
+Odpowiedź Pierwsze zdanie jest fałszywe (przedwczesne zamknięcie nie wymaga planowego przygotowania), drugie prawdziwe (przedwczesne zamknięcie też wymaga działań). Prawidłowa opcja B (tylko drugie zdanie prawdziwe).
