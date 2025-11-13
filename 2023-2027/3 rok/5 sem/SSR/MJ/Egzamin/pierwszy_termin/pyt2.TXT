@@ -1,0 +1,22 @@
+Oryginalne czasy komunikatów:
+P1(40) -> A(40) -> P2(28)
+P2(30) -> B(30) -> P3(42)
+P3(47) -> C(47) -> P1(48)
+P3(47) -> C(47) -> P2(49)
+
+Ostateczne korekty czasów:
+P1: +2
+P2: +13
+P3: +2
+
+Synchronizowane zdarzenia:
+P1(40) -> A(40) -> P2(41)
+P2(43) -> B(43) -> P3(44)
+P3(49) -> C(49) -> P1(50)
+P3(49) -> C(49) -> P2(62)
+
+Wyjaśnienie obliczeń:
+Na maszynie obsługującej proces P2 dodałem 13 impulsów w czasie 28, bo 40 >= 28.
+Na maszynie obsługującej proces P3 dodałem 2 impulsy w czasie 42, bo 43 >= 42.
+Na maszynie obsługującej proces P1 dodałem 2 impulsy w czasie 48, bo 49 >= 48.
+Na maszynie obsługującej proces P2 nic nie zmieniłem, bo 62 > 49.

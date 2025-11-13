@@ -1,0 +1,11 @@
+Model puli procesorów pozwala na efektywniejsze wykorzystanie mocy obliczeniowej poprzez
+równomierne rozłożenie zadań na wszystkie dostępne procesory. Dzięki temu eliminuje się
+problem nierównomiernego obciążenia poszczególnych jednostek, który występuje w modelu
+stacji roboczych. W modelu stacji roboczych każda jednostka działa niezależnie, co może
+prowadzić do sytuacji, gdzie jedna stacja jest przeciążona, podczas gdy inna pozostaje bezczynna.
+
+Średni czas oczekiwania na wynik zamówienia można obliczyć zgodnie z teorią masowej obsługi:
+T = 1 / (μ - λ)
+
+gdzie λ = 40 zamówień na sekundę, a μ = 50 zamówień na sekundę. Wobec tego:
+T = 1 / (50 - 40) = 1 / 10 = 0,1 s = 100 ms.
