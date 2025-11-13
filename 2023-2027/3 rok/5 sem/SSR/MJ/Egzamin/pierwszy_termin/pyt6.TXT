@@ -1,0 +1,24 @@
+Etap 1: Całkowity rozmiar danych (dane + UDP):
+5000B (dane) + 8B (UDP) = 5008B
+
+Etap 2: Miejsce w fragmencie po uwzględnieniu nagłówka IP:
+1492B (MTU) - 20B (IP) = 1472B
+Każdy fragment musi zawierać nagłówek 20 B. Oznacza to, że na dane zostaje 1472 B.
+
+Etap 3: Dostosowanie do wielokrotności 8 bajtów:
+1472 B jest podzielne na 8, więc zostawiamy jak jest.
+
+Etap 4: Wygląd:
+----------------------------------------
+| 20B        | 8B          | 5000B |
+
+Etap 5: Obliczenia dla wybranego fragmentu:
+Fragment 2: 1472@1472MF
+- Offset w bajtach: 1472 B
+- Reprezentacja binarna: bin(1472) = 0010111000000
+
+Podsumowanie fragmentacji:
+1472@0MF
+1472@1472MF
+1472@2944MF
+1472@4416LF

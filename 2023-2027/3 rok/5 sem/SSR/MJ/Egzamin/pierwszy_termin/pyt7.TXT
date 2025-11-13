@@ -1,0 +1,6 @@
+Co to jest offset w mechanizmie fragmentacji protokołu IP?
+Jaką długość w bitach ma pole offset i w jakich jednostkach jest w nim podawany offset?
+
+Offset w mechanizmie fragmentacji protokołu IP to jest wartość, która wskazuje, gdzie dany
+fragment danych znajduje się w oryginalnym datagramie IP. Pole offsetu składa się z 13 bitów,
+a jego wartość jest podawana w jednostkach 8-bajtowych (czyli 64-bitowych).
