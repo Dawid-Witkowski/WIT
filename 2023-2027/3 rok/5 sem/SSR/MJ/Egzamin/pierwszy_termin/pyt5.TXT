@@ -1,0 +1,12 @@
+Postać bitowa adresów:
+192.168.2.33 = 11000000.10101000.00000010.0010 0001
+192.168.2.46 = 11000000.10101000.00000010.0010 1110
+
+Adres sieci: 192.168.2.32/28 = 255.255.255.240
+Adres 192.168.2.50 =  192.168.2.0011 0010 nie należy do tej sieci – część sieciowa jest inna. Adres minimalnej sieci zawierającej wszystkie trzy adresy możemy wyliczyć przez znalezienie takiej części sieciowej, która będzie wspólna dla wszystkich trzech adresów.
+192.168.2.33 = 11000000.10101000.00000010.001 00001
+192.168.2.46 = 11000000.10101000.00000010.001 01110
+192.168.2.50 = 11000000.10101000.00000010.001 10010
+
+Ostatnie 5 bitów w ostatnich oktetach się różnią – reszta jest taka sama.
+Najmniejsza sieć obejmująca wszystkie trzy adresy: 192.168.2.32/27 = 255.255.255.224
