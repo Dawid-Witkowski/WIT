@@ -1,0 +1,7 @@
+Napisać kod, który przyjmuje:
+CLK - clock
+RESET - przycisk do resetowania stanu do 1 elementu ciągu z lewej strony
+ENABLE - przycisk, green light/red light, który zatrzymuje program i przechodzenie przez wylosowany ciąg liczb, zwraca w trakcie zatrzymania ten sam element na wyjściu N
+DIR - kierunek przechodzenia przez wylosowany ciąg liczb
+
+każda osoba na kartce dostaje ciąg różnych liczb i różnej ilości liczb, program przechodzi przez te liczby od lewej do prawej co takt zegara i gdy dochodzi do końca ciągu to loopuje

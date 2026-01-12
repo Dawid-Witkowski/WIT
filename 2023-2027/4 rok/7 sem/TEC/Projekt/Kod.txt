@@ -1,0 +1,62 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity SUM is
+    Port (
+        clk    : in  std_logic;
+        rst    : in  std_logic;
+        enable : in  std_logic;
+        dir    : in  std_logic;  -- '1' = forward, '0' = backward
+        outp   : out std_logic_vector(7 downto 0)
+    );
+end SUM;
+
+architecture Behavioral of SUM is
+    -- Zmieniono zakres z 0..10 na 0..9 (łącznie 10 stanów)
+    signal state : integer range 0 to 9 := 0;
+begin
+
+    -- Proces licznika stanów
+    process(clk, rst)
+    begin
+        if rst = '1' then
+            state <= 0;
+        elsif rising_edge(clk) then
+            if enable = '1' then
+                if dir = '1' then  -- Kierunek do przodu
+                    if state = 9 then
+                        state <= 0;
+                    else
+                        state <= state + 1;
+                    end if;
+                else              -- Kierunek do tyłu
+                    if state = 0 then
+                        state <= 9;
+                    else
+                        state <= state - 1;
+                    end if;
+                end if;
+            end if;
+        end if;
+    end process;
+
+    -- Proces wyjścia (kombinacyjny)
+    process(state)
+    begin
+        case state is
+            when 0  => outp <= x"FF"; -- 255
+            when 1  => outp <= x"FE"; -- 254
+            when 2  => outp <= x"FC"; -- 252
+            when 3  => outp <= x"F9"; -- 249
+            when 4  => outp <= x"F3"; -- 243
+            when 5  => outp <= x"E7"; -- 231
+            when 6  => outp <= x"CF"; -- 207
+            when 7  => outp <= x"9F"; -- 159
+            when 8  => outp <= x"3F"; -- 63
+            when 9  => outp <= x"7F"; -- 127
+            when others => outp <= x"FF"; -- Zabezpieczenie (opcjonalne)
+        end case;
+    end process;
+
+end Behavioral;

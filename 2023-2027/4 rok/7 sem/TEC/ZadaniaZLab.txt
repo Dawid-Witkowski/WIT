@@ -1,0 +1,168 @@
+---- dwuwejściowa bramka AND --
+--library ieee;
+--use ieee.std_logic_1164.all;
+--entity lab1 is
+--port( a : in std_logic;
+--	b : in std_logic;
+--	y : out std_logic );
+--end lab1;
+--architecture BEH of lab1 is
+--begin
+--	y <= a and b;
+--end BEH;
+--
+
+
+
+
+--- zad 2 | and4 xor4
+--library ieee;
+--use ieee.std_logic_1164.all;
+--entity lab1 is
+--port( 
+--	a : in std_logic;
+--	b : in std_logic;
+--	c : in std_logic;
+--	d : in std_logic;
+--	y : out std_logic; 
+--	x : out std_logic
+--);
+--end lab1;
+--architecture BEH of lab1 is
+--begin
+--	y <= a and b and c and d;
+--	x <= a xor b xor c xor d;
+--end BEH;
+
+
+
+
+--- zad3 | zad3. w 1-kach
+
+
+--library ieee;
+--use ieee.std_logic_1164.all;
+--entity lab1 is
+--	port( 
+--		A: in  std_logic_vector (2 downto 0);
+--		Y: out std_logic_vector (7 downto 0)
+--	);
+--end lab1;
+--architecture BEH of lab1 is
+--begin
+--	process(A)
+--	begin
+--		case A is
+--			when "000"  => Y <= "00000001";
+--			when "001"  => Y <= "00000010";
+--			when "010"  => Y <= "00000100";
+--			when "011"  => Y <= "00001000";
+--			when "100"  => Y <= "00010000";
+--			when "101"  => Y <= "00100000";
+--			when "110"  => Y <= "01000000";
+--			when others => Y <= "10000000";
+--		end case;
+--	end process;
+--end BEH;
+
+
+
+--- zad4 | sumator 4bit bin dodatnie
+
+
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.std_logic_unsigned.all;
+--entity lab1 is
+--	port ( 
+--		A, B : in std_logic_vector(3 downto 0);
+--		Y : out std_logic_vector(4 downto 0) 
+--	);
+--end lab1;
+--architecture BEH of lab1 is
+--begin
+--	Y <= ("0"&A) + ("0"&B);
+--end BEH;
+
+
+
+
+
+--- zad5 | 5bit licznik binarny z kasowaniem async
+
+
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.std_logic_unsigned.all;
+--entity lab1 is
+--	port ( 
+--		R, C : in std_logic;
+--		Q : inout std_logic_vector( 4 downto 0 ) 
+--	);
+--end lab1;
+--architecture BEH of lab1 is
+--begin
+--	process( C, R )
+--		begin
+--			if R = '0' then Q <= "00000";
+--			elsif rising_edge(C) then Q <= Q + 1;
+--			end if;
+--	end process;
+--end BEH;
+
+
+
+
+--- zad6 | 12bit licznik binarny z kasowaniem async
+
+
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.std_logic_unsigned.all;
+--entity lab1 is
+--	port ( 
+--		CLK : in std_logic;
+--		Q : inout std_logic_vector( 11 downto 0 ) 
+--	);
+--end lab1;
+--architecture BEH of lab1 is
+--begin
+--	process(CLK)
+--		begin
+--			if rising_edge(CLK) then
+--				Q <= Q(10 downto 0) & ( not Q(11) ) ;
+--			end if;
+--	end process;
+--end BEH;
+
+a
+
+
+
+--- zad8 | 12bit wziuuum jeden/dwa
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+entity lab1 is
+	port ( 
+		CLK : in std_logic;
+		UWU : in std_logic;
+		Q : inout std_logic_vector( 11 downto 0 ) 
+	);
+end lab1;
+architecture BEH of lab1 is
+begin
+	process(CLK)
+		begin
+			if rising_edge(CLK) then
+				if UWU = '1' then
+					Q <= Q(10 downto 0) & not( Q(11) or Q( 0 ) or Q( 1 )  or Q( 2 ) or Q( 3 ) or Q( 4 )  or Q( 5 )or Q( 6 ) or Q( 7 )  or Q( 8 ) or Q( 9 ) or Q( 10 ) );
+				else if UWU = '0' then
+					Q <= Q(10 downto 0) & not( Q(11) and Q( 0 ) and Q( 1 )  and Q( 2 ) and Q( 3 ) and Q( 4 )  and Q( 5 )and Q( 6 ) and Q( 7 )  and Q( 8 ) and Q( 9 ) and Q( 10 ) );
+				end if;
+			end if;
+	end process;
+end BEH;
+
